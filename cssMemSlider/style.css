@@ -18,9 +18,9 @@
 }
 
 .slider {
-  width: 100%;
+  width: 80%;
   position: absolute;
-  height: 0;
+  height: 100%;
   padding-top: 56.25%;
   background: #141414;
   overflow: hidden;
@@ -116,15 +116,15 @@
 
 @media (max-width: 767px) { 
   .slider {
-    width: 100%;
+    width: 80%;
     position: absolute;
     height: 0;
     padding-top: 56.25%;
     background: #141414;
     overflow: hidden;
     border: solid 8px #e4dddddd;
-    border-left-width: 30px;
-    border-right-width: 30px;
+    border-left-width: 20px;
+    border-right-width: 20px;
     border-radius: 1%;
    
   }
@@ -149,8 +149,8 @@
 
   .dots {
     bottom: 19%;
-    right: 19%;
-    left: 19%;
+    right: 10%;
+    left: 10%;
     position: absolute;
     display: flex;
     justify-content: center;
