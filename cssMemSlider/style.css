@@ -13,18 +13,18 @@
 
 .container {
   position: relative;
-  max-width: 70%;
+  max-width: 50%;
   margin: 5% auto;
 }
 
 .slider {
-  width: 80%;
+  width: 100%;
   position: absolute;
   height: 100%;
   padding-top: 56.25%;
   background: #141414;
   overflow: hidden;
-  border: solid 8px #e4dddddd;
+  border: solid 0.5vw #e4dddddd;
   border-radius: 1%;
  
 }
@@ -59,29 +59,41 @@
   transition: 0.9s;
 }
 
+.dots .wrapper:hover > label {
+  opacity: 0.7;
+
+}
 
 .dots {
-  /* width: 180%; */
   position: absolute;
-  bottom: 9%;
-  right: 2.5%;
+  bottom: 7%;
+  right: 2%;
   display: flex;
   justify-content: center;
   align-items: center;
 } 
 
-.dots label {
-  width: 9px;
-  height: 9px;
+.wrapper {
+  width: 4vw;
+  height: 4vh;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dots .wrapper label {
+  display: block;
+  width: 0.8vw;
+  height: 0.8vw;
   background: #fff;
-  margin: 0 8px;
   border-radius: 50%;
   opacity: 0.3;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
 
-.dots label:hover {
+.dots .wrapper label:hover {
   opacity: 0.7;
 }
 
@@ -116,15 +128,15 @@
 
 @media (max-width: 767px) { 
   .slider {
-    width: 80%;
+    width: 100%;
     position: absolute;
     height: 0;
     padding-top: 56.25%;
     background: #141414;
     overflow: hidden;
     border: solid 8px #e4dddddd;
-    border-left-width: 20px;
-    border-right-width: 20px;
+    border-left-width: 2vw;
+    border-right-width: 2vw;
     border-radius: 1%;
    
   }
@@ -148,7 +160,7 @@
   }
 
   .dots {
-    bottom: 19%;
+    bottom: 12%;
     right: 10%;
     left: 10%;
     position: absolute;
@@ -158,7 +170,7 @@
   }
 
   .caption {
-    font-size: 14px;
+    font-size: 12px;
   }
 
 #radio-1:checked ~ #slide-1 .caption,
